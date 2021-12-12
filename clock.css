@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #3d087d;
+    display: flex;
+    align-items: center;
+}
+
+.main-container{
+    width:100%;
+    height:110vh;
+    
+    display: flex;
+    justify-content: space-evenly;
+
+    
+    
+   
+}
+
+.clock-img
+{
+    width:200px;
+    height:80px;
+    background-image: url('./clocks.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+
+}
+
+.set-alarm{
+
+    width:40%;
+    height:96vh;
+   
+    margin-top:50px;
+    margin-left:100px;
+ 
+   
+    
+}
+
+.alarm-time{
+
+    width:100%;
+    height:50vh;
+    background-color: white;
+    margin-top: 10px;
+    border-style: solid;
+    border-radius:10px;
+    border-width:0px;
+ 
+}
+.wake-time{
+    width:95%;
+    height:10vh;
+   
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+
+}
+.img1{
+    width:20px;
+    height:20px;
+
+    
+}
+p{
+    font-size: 20px;
+    font-family: sans-serif;
+ 
+}
+.wake-time-select-bar{
+    width:100px;
+    height:30px;
+    border-style: solid;
+    border-radius: 7px;
+
+}
+.division{
+
+    width:1px;
+    height:8vh;
+    background-color: #3d087d;
+    margin-left:100px;
+
+}
+
+.lunch-time{
+    width:95%;
+    height:10vh;
+ 
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+
+.lunch-time-select-bar{
+    width:100px;
+    height:30px;
+    border-style: solid;
+    border-radius: 7px;
+
+}
+
+.sleep-time{
+    width:95%;
+    height:10vh;
+;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.sleep-time-select-bar{
+
+    width:100px;
+    height:30px;
+    border-style: solid;
+    border-radius: 7px;
+  
+}
+
+.btn{
+
+     margin-top:20px;
+    width:300px;
+    height:8vh;
+   background-image: linear-gradient(to bottom right ,#3d087d 20%,#F81894 80%);
+   color: white;
+   border-radius: 12px;
+
+}
+
+.time-container1{
+    width:40%;
+    height:92vh;
+  
+    
+    margin-top:50px;
+    position: relative;
+  
+    
+
+   
+}
+
+.time-box{
+    width:70%;
+    height:12vh;
+    background-color: white;
+    border:0px solid;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    z-index:3;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.hours{
+    background-color:#fff0f3;
+    width:50px;
+    height:50px;
+    text-align: center;
+    padding-top: 5px;
+}
+.mins{
+    background-color:#fff0f3;
+    width:50px;
+    height:50px; 
+    text-align: center;
+     padding-top: 7px;
+}
+
+.seconds{
+    background-color:#fff0f3;
+    width:50px;
+    height:50px; 
+    text-align: center;
+    padding-top:10px;
+}
+.am-pm{
+
+
+    background-color: #fff0f3;
+    width:50px;
+    height:55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#3d087d;
+    font-size: 20px;
+    background-color: #ff69b4;
+ 
+    
+}
+.time-container2{
+  width:40%;
+  height: 13vh;
+  background-color: #cbc3e3;
+  margin: auto;
+ position: relative;
+
+ z-index: 2;
+ transform: translateY(-80px);
+ border:0 solid;
+ border-radius:10px;
+ 
+}
+.time-container3{
+    width:30%;
+    height: 13vh;
+    background-color: #a865c9;
+    margin: auto;
+   position: relative;
+  
+   z-index:1;
+   transform: translateY(-160px);
+   border:0 solid;
+   border-radius:10px;
+   
+  }
+  .images{
+      width:100%;
+      height:70vh;
+      background-color: white;
+      position: absolute;
+      top:150px;
+      text-align: center;
+    
+  }
+ .img2{
+     border:2px solid white;
+     width:95%;
+     height:65vh;
+     background-image: url('./baloon.jpg');
+     
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     
+ 
+ }
+ .alarm-text-container{
+
+    width:70%;
+    height:15vh;
+    background-color: #a865c9;
+    border-radius:15px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color:white;
+    font-size: 25px;
+    line-height: 30px;
+    padding:12px 0 0 12px;
+    
+ }
+ .alarm-style{
+     font-family: sans-serif;
+     color: #3d087d;
+ }
+
+ @media (max-width:1024px){
+
+    .main-container{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:120vh;
+        
+
+    }
+    .set-alarm{
+        margin:auto;
+        position: relative;
+        top:20vh;
+        
+      
+        width:95%;
+    }
+    p{
+        font-size: 15px;
+
+    }
+    .btn{
+        width:70%;
+    }
+
+    .alarm-text-container{
+        width:95%;
+    }
+    .division{
+        margin:auto;
+    }
+    .time-box{
+        width:95%;
+     
+     
+        
+    }
+    .time-container1{
+        width:100%;
+    
+        margin-top:25vh;
+    }
+    .time-container2{
+        transform: translateY(-11vh);
+    }
+
+    .time-container3{
+        transform: translateY(-22vh);
+    }
+    .images{
+        
+        width:95%;
+        margin-left:2.5vw;
+        margin-top:8vh;
+     }
+    .img2{
+        width:98%;
+        margin: auto;
+        position: relative;
+       
+    }
+     
+ }
