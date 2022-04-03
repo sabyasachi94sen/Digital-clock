@@ -142,6 +142,7 @@ p{
    color: white;
    border-radius: 12px;
 
+
 }
 
 .time-container1{
@@ -177,14 +178,26 @@ p{
     width:50px;
     height:50px;
     text-align: center;
-    padding-top: 5px;
+    padding-top:2.8vh;
+    font-size: 12px; 
+    color:#3d087d;
+}
+.hours p{
+    font-size: 12px;
 }
 .mins{
     background-color:#fff0f3;
     width:50px;
     height:50px; 
     text-align: center;
-     padding-top: 7px;
+     padding-top:2.8vh;
+     font-size: 12px; 
+     color:#3d087d;
+}
+.mins p{
+    font-size: 12px;
+   
+  
 }
 
 .seconds{
@@ -192,7 +205,12 @@ p{
     width:50px;
     height:50px; 
     text-align: center;
-    padding-top:10px;
+    padding-top:2.8vh;
+    font-size: 12px; 
+    color:#3d087d;
+}
+.seconds p{
+    font-size: 12px;
 }
 .am-pm{
 
@@ -217,7 +235,7 @@ p{
  position: relative;
 
  z-index: 2;
- transform: translateY(-80px);
+ transform: translateY(-11vh);
  border:0 solid;
  border-radius:10px;
  
@@ -230,7 +248,7 @@ p{
    position: relative;
   
    z-index:1;
-   transform: translateY(-160px);
+   transform: translateY(-22vh);
    border:0 solid;
    border-radius:10px;
    
@@ -240,7 +258,7 @@ p{
       height:70vh;
       background-color: white;
       position: absolute;
-      top:150px;
+      top:25vh;
       text-align: center;
     
   }
@@ -275,7 +293,7 @@ p{
      color: #3d087d;
  }
 
- @media (max-width:1024px){
+ @media (max-width:1024px) and (orientation:portrait){
 
     .main-container{
         display:flex;
@@ -299,10 +317,12 @@ p{
     }
     .btn{
         width:70%;
+        font-size: 1rem;
     }
 
     .alarm-text-container{
         width:95%;
+        height:17vh;
     }
     .division{
         margin:auto;
@@ -332,10 +352,325 @@ p{
         margin-top:8vh;
      }
     .img2{
-        width:98%;
+        width:auto;
         margin: auto;
         position: relative;
        
     }
+    .btn{
+        margin-left: 14vw;
+    }
+   
      
  }
+
+
+
+ @media (max-width:1024px) and (orientation:landscape){
+
+    .main-container{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height:380vh;
+        /* background-color: yellow; */
+        
+
+    }
+    .set-alarm{
+        margin:auto;
+        position: relative;
+        top:10vh;
+        /* background-color: aqua; */
+       height:auto;
+        width:95%;
+    }
+    p{
+        font-size: 15px;
+
+    }
+    .btn{
+        width:60%;
+        height: auto;
+        margin-left: 19vw;
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+
+    .alarm-text-container{
+        width:95%;
+        height:50vh;
+       
+        /* background-color: red; */
+     
+    }
+    .alarm-text-container p{
+        margin-top: 6vh;
+        
+    }
+    .division{
+        margin:auto;
+    }
+    .time-box{
+        width:95%;
+        height:30vh;
+     
+     
+        
+    }
+    .time-container1{
+        width:100%;
+        /* background-color: yellow; */
+        height: 190vh;
+    
+        margin-top:30vh;
+    }
+    .time-container2{
+        transform: translateY(-9vh);
+    }
+
+    .time-container3{
+        transform: translateY(-18vh);
+    }
+    .images{
+        
+        width:95%;
+        margin-left:2.5vw;
+        margin-top:25vh;
+        /* background-color: red; */
+        height: 170vh;
+     }
+    .img2{
+        width:auto;
+        margin: auto;
+        position: relative;
+        height: 160vh;
+       
+    }
+    .alarm-time{
+        height:90vh;
+    }
+    .wake-time{
+        height: 25vh;
+    }
+    .lunch-time{
+        height:25vh;
+    }
+    .sleep-time{
+        height: 25vh;
+    }
+    .clock-img{
+        margin-top:0px;
+        position: relative;
+        /* background-color: red; */
+        width:280px;
+        height:100px;
+    }
+    .btn{
+        font-size:1.5rem;
+    }
+    .img1{
+        width:6vw;
+        height: 8vh;
+    }
+    .wake-time p{
+        font-size: 1.5rem;
+        /* background-color: yellow; */
+    }
+    .wake-time-select-bar{
+        width:20vw;
+        height: 10vh;
+        font-size: 1.5rem;
+    }
+    .lunch-time p{
+       font-size: 1.5rem;
+    }
+    .lunch-time-select-bar{
+       width:20vw;
+       height: 10vh;
+       font-size: 1.5rem;
+    }
+    .sleep-time p{
+       font-size: 1.5rem;
+    }
+
+     .sleep-time-select-bar{
+        width:20vw;
+        height: 10vh;
+        font-size: 1.5rem;
+    }
+
+    .alarm-text-container p{
+        font-size: 1.5rem;
+        line-height: 5vh;
+    }
+    .time-box p{
+        font-size: 1.5rem;
+    }
+
+    .hours{
+        
+        width:10vw;
+        height: 14vh;
+        /* background-color: yellow; */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hours {
+       font-size: 1rem;
+      
+   
+    }
+    .hours p{
+        font-size: 1rem;
+    }
+
+    .mins{
+       width:10vw;
+       height: 14vh;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+   }
+   .mins p{
+       font-size: 1rem;
+      
+     
+   }
+   
+   .seconds{
+       width:10vw;
+       height: 14vh;
+       font-size: 1rem;
+       display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      
+   }
+   .seconds p{
+       font-size: 1rem;
+   }
+   .am-pm{
+       width:9vw;
+       height:14vh;
+       font-size: 1rem;
+   }
+   .alarm-style{
+    font-size:2rem;
+    /* background-color: yellow; */
+}
+  
+
+     
+ }
+
+
+ @media (min-width:750px) and (max-width:915px) and (orientation: portrait){
+     .btn{
+         font-size:2rem;
+     }
+     .img1{
+         width:6vw;
+         height: 4vh;
+     }
+     .wake-time p{
+         font-size: 2rem;
+         /* background-color: yellow; */
+     }
+     .wake-time-select-bar{
+         width:20vw;
+         height: 4vh;
+         font-size: 2rem;
+     }
+     .lunch-time p{
+        font-size: 2rem;
+     }
+     .lunch-time-select-bar{
+        width:20vw;
+        height: 4vh;
+        font-size: 2rem;
+     }
+     .sleep-time p{
+        font-size: 2rem;
+     }
+
+      .sleep-time-select-bar{
+         width:20vw;
+         height: 4vh;
+         font-size: 2rem;
+     }
+
+     .alarm-text-container p{
+         font-size: 2rem;
+         line-height: 5vh;
+     }
+     .time-box p{
+         font-size: 2rem;
+     }
+
+     .hours{
+         
+         width:10vw;
+         height: 7vh;
+         /* background-color: yellow; */
+         position: relative;
+     }
+     .hours {
+        font-size: 1.5rem;
+       
+    
+     }
+     .hours p{
+         font-size: 1.5rem;
+     }
+
+     .mins{
+        width:10vw;
+        height: 7vh;
+         font-size: 1.5rem;
+         
+    }
+    .mins p{
+        font-size: 1.5rem;
+       
+      
+    }
+    
+    .seconds{
+        width:10vw;
+        height: 7vh;
+        font-size: 1.5rem;
+       
+    }
+    .seconds p{
+        font-size: 1.5rem;
+    }
+    .am-pm{
+        width:9vw;
+        height:7vh;
+        font-size: 1.5rem;
+    }
+    .clock-img{
+       width:400px;
+       height:160px;
+    }
+    .alarm-style{
+        font-size:2rem;
+        /* background-color: yellow; */
+    }
+      
+
+     
+ }
+
+
+ 
+
+ 

@@ -54,6 +54,7 @@ function alarms(){
     var wake_time=document.getElementById("wake-time-id").value;
 
     var w_t=$("#wake-time-id option:selected").text();
+  
     
 
     
@@ -70,11 +71,11 @@ function alarms(){
     var time=new Date();
 
     var h=time.getHours()%12;
-    if(h==0)
-     h=12;
+   
 
     
      var am_pm=document.getElementById("am-pm-id").innerHTML;
+    
 
      var p1_text_id=document.getElementById("p1-text");
      var p2_text_id=document.getElementById("p2-text");
@@ -106,6 +107,8 @@ function alarms(){
       else if(s_t.includes(am_pm))
       f3=1;
 
+     
+
 
       
 
@@ -118,6 +121,7 @@ function alarms(){
         alarm_text.style.fontFamily="sans-serif";
         alarm_text.style.color="#3d087d";
         img_id.style.backgroundImage="url('./morning.jfif')";
+        
 
     }
     else if(lunch_time%12==h && f2==1)
